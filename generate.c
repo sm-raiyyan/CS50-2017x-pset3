@@ -21,21 +21,17 @@
 
 int main(int argc, string argv[])
 {
-    // If there are not two or three arguments,
-    // display the use of and exit the program.
+    // TODO: comment me
     if (argc != 2 && argc != 3)
     {
         printf("Usage: ./generate n [s]\n");
         return 1;
     }
 
-    // convert ascii value to integer value
+    // TODO: comment me
     int n = atoi(argv[1]);
 
-    
-    // if there are three arguments, convert the third
-    // (seedrand) to an integer, else have the srand be
-    // the current time.
+    // TODO: comment me
     if (argc == 3)
     {
         srand48((long) atoi(argv[2]));
@@ -45,7 +41,7 @@ int main(int argc, string argv[])
         srand48((long) time(NULL));
     }
 
-    // generate random numbers n amount of times
+    // TODO: comment me
     for (int i = 0; i < n; i++)
     {
         printf("%i\n", (int) (drand48() * LIMIT));

@@ -1,9 +1,4 @@
 /**
- * find.c
- *
- * Computer Science 50
- * Problem Set 3
- *
  * Prompts user for as many as MAX values until EOF is reached, 
  * then proceeds to search that "haystack" of values for given needle.
  *
@@ -39,8 +34,8 @@ int main(int argc, string argv[])
     for (size = 0; size < MAX; size++)
     {
         // wait for hay until EOF
-        printf("\nhaystack[%d] = ", size);
-        int straw = GetInt();
+        printf("\nhaystack[%i] = ", size);
+        int straw = get_int();
         if (straw == INT_MAX)
         {
             break;
